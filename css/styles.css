@@ -476,10 +476,6 @@ body#home .menu-toggle {
         height: 2vw;
     }
 
-    li .list-space .no {
-        padding: 0;
-    }
-
     /*---------------Medlemskap-------------------*/
     /* Bilden som hänger */
     .membership-image {
