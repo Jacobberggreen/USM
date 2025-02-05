@@ -392,6 +392,10 @@ body#home .menu-toggle {
         padding-bottom: 15px;
     }
 
+    .logo img {
+        padding-left: 0;
+    }
+
 
     /*---------------Homepage-------------------*/
     .hero-text h1 {
