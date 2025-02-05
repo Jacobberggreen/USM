@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>USM Pass & Program</title>
+    <link href="../css/training.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+
+<header>
+    <!-- Navigeringsmeny -->
+    <div id="navbar-placeholder"></div>
+</header>
+<section id="training">
+    <section class="page-text">
+        <h1>TRÄNINGSPASS</h1>
+    </section>
+
+    <!-- Dropdown-menyer -->
+    <div class="filter-menu" class="dropdown-arrow">
+        <select id="facility-select">
+            <option value="all">Välj en anläggning</option>
+            <option value="utopia">USM - Utopia</option>
+            <option value="ostra">USM - Östra</option>
+            <option value="mariehem">USM - Mariehem</option>
+            <option value="navet">USM - Navet</option>
+            <option value="all">Alla Anläggningar</option>
+        </select>
+        <select id="pass-select">
+            <option value="all" selected>Välj typ av pass</option>
+        </select>
+        <select id="instructor-select">
+            <option selected disabled>Välj instruktör</option>
+            <option value="instruct_1">Instruktör 1</option>
+            <option value="instruct_2">Instruktör 2</option>
+            <option value="instruct_3">Instruktör 3</option>
+            <option value="instruct_4">Instruktör 4</option>
+            <option value="instruct_5">Instruktör 5</option>
+        </select>
+        <input type="date" id="date-picker">
+    </div>
+
+    <!-- Horisontell scroll med datum -->
+    <div class="date-scroll-container">
+        <button class="scroll-btn left" onclick="scrollDates(-1)">&#9664;</button>
+        <div class="date-list" id="date-list"></div>
+        <button class="scroll-btn right" onclick="scrollDates(1)">&#9654;</button>
+    </div>
+
+    <div class="schedule-wrapper">
+        <!-- Träningspass schema -->
+        <div class="schedule">
+            <div class="time-slot">09-10</div>
+            <div class="time-slot">10-11</div>
+            <div class="time-slot">11-12</div>
+            <div class="time-slot">12-13</div>
+            <div class="time-slot">13-14</div>
+            <div class="time-slot">14-15</div>
+            <div class="time-slot">15-16</div>
+        </div>
+
+
+        <!-- ---------------------Schema för anläggningar----------------------- -->
+        <!-- Schema för Utopia -->
+        <div class="schedule facility-schedule" id="schedule-utopia">
+            <div class="time-slot-item">Yoga</div>
+            <div class="time-slot-item">Spinning</div>
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item">Bodypump</div>
+            <div class="time-slot-item">Spinning</div>
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item">Crossfit</div>
+        </div>
+
+        <!-- Schema för Östra -->
+        <div class="schedule facility-schedule" id="schedule-ostra">
+            <div class="time-slot-item">Pilates</div>
+            <div class="time-slot-item">HIIT</div>
+            <div class="time-slot-item">Zumba</div>
+            <div class="time-slot-item">Boxning</div>
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item">Cirkelträning</div>
+            <div class="time-slot-item"></div>
+        </div>
+
+        <!-- Schema för Mariehem -->
+        <div class="schedule facility-schedule" id="schedule-mariehem">
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item">Yoga</div>
+            <div class="time-slot-item">Pilates</div>
+            <div class="time-slot-item">Crossfit</div>
+            <div class="time-slot-item">HIIT</div>
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item">Bodypump</div>
+        </div>
+
+        <!-- Schema för Navet -->
+        <div class="schedule facility-schedule" id="schedule-navet">
+            <div class="time-slot-item">AquaFit</div>
+            <div class="time-slot-item">Simträning</div>
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item"></div>
+            <div class="time-slot-item">Zumba</div>
+            <div class="time-slot-item">Yoga</div>
+            <div class="time-slot-item">Spinning</div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <section class="page-text">
+        <h1>TRÄNINGSPROGRAM</h1>
+    </section>
+
+    <section class="info-items">
+        <!-- USM Start -->
+        <section class="info-box">
+            <img src="../pictures/group_training.png">
+            <div class="info-content">
+                <div class="info-text">
+                    <h2>USM START</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+                <div class="info-button-box">
+                    <a class="btn-info" href="#">BOKA</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PT -->
+        <section class="info-box">
+            <img src="../pictures/pt_training.png">
+            <div class="info-content">
+                <div class="info-text">
+                    <h2>BOKA PT</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+                <div class="info-button-box">
+                    <a class="btn-info" href="#">BOKA</a>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+</section>
+
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<script src="../js/script.js"></script>
+<script src="../js/training.js"></script>
+</body>
+</html>

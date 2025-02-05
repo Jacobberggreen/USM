@@ -1,0 +1,93 @@
+/*-------------------------------------------MEDLEMSKAP----------------------------------------------*/
+/* Bilden som hänger */
+.membership-image {
+    position: absolute;
+    top: 12%; /* Placerar den precis under den gula boxen */
+    left: 76%; /* Centrerar den horisontellt */
+    width: 200px; /* Anpassa storleken vid behov */
+    z-index: 10; /* Se till att den är ovanpå andra element */
+}
+
+.membership-image img {
+    width: 100%;
+}
+
+/* Rullista (Dropdown) */
+.membership-filter {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#facility-select {
+    width: 24vw;
+    padding: 1vw;
+    font-size: 1.5vw;
+    border: 2px solid #ffc107;
+    background: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px;
+    border-radius: 2px;
+
+    appearance: none; /* Tar bort standardstil på vissa webbläsare */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='black'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Flytta pilen mer inåt */
+    background-size: 18px; /* Anpassa pilens storlek */
+}
+
+/* Medlemskapskort */
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.membership-card {
+    background: white;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    display: none; /* Gömmer alla kort som standard */
+    display: none;
+
+}
+
+.membership-card.active {
+    display: block; /* Visar endast de kort som är valda */
+}
+
+.membership-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}

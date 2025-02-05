@@ -1,0 +1,219 @@
+/*-------------träningspass-------*/
+/* Dropdown-menyer */
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+
+}
+
+.filter-menu select {
+    padding: 1vw 3vw 1vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid #ffc107;
+    background: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px;
+    border-radius: 2px;
+
+    appearance: none; /* Tar bort standardstil på vissa webbläsare */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='black'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Flytta pilen mer inåt */
+    background-size: 18px; /* Anpassa pilens storlek */
+}
+
+.filter-menu input[type="date"] {
+    padding: 1vw 3vw 1vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid #ffc107;
+    background: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px;
+    border-radius: 2px;
+}
+
+.date-scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+    width: 80%;
+    overflow: hidden; /* Tar bort oönskad scroll */
+}
+
+.date-list {
+    display: flex;
+    gap: 10px;
+    overflow: hidden; /* Inget scrollbart innehåll, navigering endast via knappar */
+    scroll-behavior: smooth;
+    padding: 10px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%; /* Gör plats för exakt 7 element */
+
+}
+
+.date-item {
+    flex: 1 1 auto; /* Alla datum tar lika stor plats */
+    text-align: center;
+    background: #EAEAEA;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 100px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.date-item:hover {
+    background: rgba(104, 104, 104, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px;
+    color: var(--primary-color);
+    transform: scale(1.05) translateY(-2px);
+    font-weight: bold;
+}
+
+.date-item.selected {
+    background: rgba(104, 104, 104, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 5px;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px;
+    color: var(--primary-color);
+    transform: scale(1.15) translateY(-2px);
+    margin: 0 0.5vw 0 0.5vw;
+    font-weight: bold;
+
+}
+
+.scroll-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-btn:hover {
+    text-shadow: rgba(0, 0, 0, 0.5) 0 4px 2px;
+    color: var(--primary-color);
+    transform: scale(1.2) translateY(-2px);
+    font-weight: bold;
+}
+
+
+/* Träningspass schema */
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 90%;
+}
+
+.facility-schedule {
+    display: none;
+
+}
+
+.facility-schedule.active {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 90%;
+}
+
+.time-slot {
+    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.time-slot-item {
+    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/*-------------träningsprogram--------*/
+.info-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Jämnt avstånd mellan boxarna och kanterna */
+    width: 90%; /* Lämnar 5% marginal på vardera sida */
+    margin: auto; /* Centrerar hela raden */
+    gap: 20px; /* Mellanrum mellan boxarna */
+}
+
+.info-box {
+    width: calc(50% - 10px); /* Tar upp halva utrymmet minus gap */
+    height: 15vw;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
+}
+
+/* Info-boxar */
+.info-box {
+    display: flex;
+    margin: 50px auto;
+    width: 40%;
+    height: 15vw;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
+}
+
+.info-box img {
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.info-text {
+    padding: 1vw;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.info-button-box {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2vw;
+}

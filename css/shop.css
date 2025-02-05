@@ -1,0 +1,108 @@
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Jämnt avstånd mellan boxarna och kanterna */
+    width: 90%; /* Lämnar 5% marginal på vardera sida */
+    margin: auto; /* Centrerar hela raden */
+    gap: 20px; /* Mellanrum mellan boxarna */
+}
+
+.shop-box {
+    width: calc(50% - 10px); /* Tar upp halva utrymmet minus gap */
+    height: 15vw;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
+}
+
+/* Se till att tredje boxen blir centrerad */
+.shop-items .shop-box:last-child {
+    width: 100%; /* Tredje boxen tar upp hela raden */
+    text-align: center;
+}
+
+
+/* Info-boxar */
+.shop-box {
+    display: flex;
+    margin: 50px auto;
+    width: 40%;
+    height: 15vw;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
+}
+
+.shop-box img {
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
+}
+
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.shop-text {
+    padding: 1vw;
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.shop-button-box {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.special-btn1 {
+    width: 15%;
+}
+
+.special-btn1:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.35) 5px 5px 0;
+}
+
+/* Shop Link-box */
+.shop-link-box {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    height: 15vw;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
+    margin-bottom: 5vw;
+}
+
+
+.shop-link-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../pictures/dumbells.png') center/cover no-repeat;
+    border-radius: 5px;
+}
+
+.shop-link-text {
+    padding: 1vw;
+    text-align: center;
+    font-size: 1.2vw;
+    color: white;
+}
