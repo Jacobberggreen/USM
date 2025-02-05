@@ -383,8 +383,13 @@ body#home .menu-toggle {
         padding: 0;
     }
 
-    header .no {
-        padding-right: 10vw;
+    header .no{
+        width: 180px;
+    }
+
+    header .no a{
+        font-size: 15px;
+        padding-bottom: 15px;
     }
 
 
