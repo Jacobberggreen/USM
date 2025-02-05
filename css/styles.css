@@ -195,6 +195,10 @@ body#home header .no a {
     text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
 }
 
+header .no {
+    padding-right: 5vw;
+}
+
 /* När sidan är skrollad */
 body#home header.scrolled {
     background: rgba(255, 255, 255);
@@ -268,7 +272,7 @@ nav ul li a {
     color: black;
     position: absolute;
     top: 10px;
-    right: 40px
+    right: 30px
 }
 
 body#home .menu-toggle {
@@ -472,6 +476,10 @@ body#home .menu-toggle {
         height: 2vw;
     }
 
+    li .list-space .no {
+        padding: 0;
+    }
+
     /*---------------Medlemskap-------------------*/
     /* Bilden som hänger */
     .membership-image {
@@ -670,11 +678,11 @@ body#home .menu-toggle {
     }
 
     .footer-links h3 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .footer-links ul li a {
-        font-size: 22px;
+        font-size: 15px;
     }
 
 }
@@ -737,6 +745,7 @@ body#home .menu-toggle {
     .gym-status-info {
         width: 95%;
         padding: 0;
+        font-size: 2vw;
     }
 
     .status-icon {
