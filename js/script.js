@@ -34,24 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -------------- Nav Scroll ----------------
     const header = document.querySelector("header");
+    const logoImg = document.getElementById("logo-img");
+    const navMenu = document.getElementById("nav-menu"); // Lägg till kollapsad meny-kontroll
 
     window.addEventListener("scroll", function () {
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
-        const logoImg = document.getElementById("logo-img");
-        const isHomePage = document.body.id === "home"; // Kolla om vi är på startsidan
-
-        function updateLogo() {
-            if (isHomePage && window.scrollY === 0) {
-                logoImg.src = "../pictures/logo_white.png"; // Genomskinlig navbar → Ljus logga
-            } else {
-                logoImg.src = "../pictures/logo.png"; // Skrollad navbar → Mörk logga
-            }
-        }
 
         if (window.scrollY > 50) {
             header.classList.add("scrolled");
-            updateLogo();
         } else {
             header.classList.remove("scrolled");
         }
@@ -59,38 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.scrollY === 0) {
             navMenu.classList.remove("active");
         }
-
-        updateLogo();
     });
-
-
-    // -------------- Update Logo ----------------
-    function updateLogo() {
-        if (navbar.classList.contains("white")) {
-            logoImg.src = "../pictures/logo-dark.png"; // Byt till mörk logga
-        } else {
-            logoImg.src = "../pictures/logo-light.png"; // Byt till ljus logga
-        }
-    }
 
     // -------------- Update Hero ----------------
     const video = document.getElementById("background-video");
 
-    // Kontrollera om enheten är en iPhone
     function isIphone() {
         return /iPhone|iPad|iPod/i.test(navigator.userAgent);
     }
 
     if (isIphone()) {
-        // Skapa en GIF-bild som ersätter videon
         const gif = document.createElement("img");
-        gif.src = "../media/gym_gif.gif"; // Se till att du har en GIF-version av din video
+        gif.src = "../media/gym_gif.gif"; // Se till att filen finns i rätt mapp
         gif.alt = "Gym video";
-        gif.style.width = "100%"; // Anpassa så att det fyller sektionen
-        gif.style.height = "auto";
+        gif.classList.add("hero-img"); // Lägg till klassen så att den får samma styling
 
-        // Ersätt videon med GIF
-        video.parentNode.replaceChild(gif, video);
+        video.replaceWith(gif); // Ersätt videon med GIF utan att lägga till onödiga mått
     }
 
 
