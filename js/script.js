@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -------------- Nav Scroll ----------------
     const header = document.querySelector("header");
-    const logoImg = document.getElementById("logo-img");
     const navMenu = document.getElementById("nav-menu"); // Lägg till kollapsad meny-kontroll
 
     window.addEventListener("scroll", function () {
@@ -49,22 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
             navMenu.classList.remove("active");
         }
     });
-
-    // -------------- Update Hero ----------------
-    const video = document.getElementById("background-video");
-
-    function isIphone() {
-        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
-    }
-
-    if (isIphone()) {
-        const gif = document.createElement("img");
-        gif.src = "../media/gym_gif.gif"; // Se till att filen finns i rätt mapp
-        gif.alt = "Gym video";
-        gif.classList.add("hero-img"); // Lägg till klassen så att den får samma styling
-
-        video.replaceWith(gif); // Ersätt videon med GIF utan att lägga till onödiga mått
-    }
 
 
     // -------------- Load Footer ----------------

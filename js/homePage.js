@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // --------------Homepage Video Mute & Pause----------------
-
     const video = document.getElementById("background-video");
+
+    // --------------Homepage Video Mute & Pause----------------
     const muteButton = document.getElementById("mute-button");
     const pauseButton = document.getElementById("pause-button");
 
@@ -32,6 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } else {
         console.warn("Video, mute-knapp eller pause-knapp hittades inte i HTML.");
+    }
+
+    // -------------- Update Hero ----------------
+    function isIphone() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    if (isIphone()) {
+        const gif = document.createElement("img");
+        gif.src = "../media/gym_gif.gif";
+        gif.alt = "Gym video";
+        gif.classList.add("hero-img");
+
+        video.replaceWith(gif); // Ersätt videon med GIF utan att lägga till onödiga mått
     }
 
 });
