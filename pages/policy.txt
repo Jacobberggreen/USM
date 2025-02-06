@@ -1,0 +1,93 @@
+Integritetspolicy Umeå Sport & Motion
+
+
+Dataskyddsförordningen, eller GDPR som den också kallas, innehåller regler om hur man får behandla personuppgifter. Förordningen börjar gälla den 25 maj 2018 och ersätter då personuppgiftslagen (PuL).
+
+
+Med anledning av GDPR som träder i kraft inom kort vill vi informera dig om hur Umeå Sport & Motion hanterar och behandlar dina personuppgifter.
+
+
+Umeå Sport & Motion AB ansvarar för behandlingen av dina personuppgifter (personuppgiftsansvarig). Umeå Sport & Motion lämnar aldrig ut dina personuppgifter utan ditt godkännande.
+
+
+Innehållsförteckning:
+
+
+Personuppgifter som hanteras av oss:
+● Personnummer
+● För- och efternamn
+● Folkbokförd adress
+● Telefonnummer
+● E-post
+● Kontonummer (vid autogiromedlemskap)
+● Företagsnamn vid företagsavtal
+● Bokningar, köp och inpasseringar
+
+
+Ett medlemskap/träningskort krävs för att kunna träna på Umeå Sport & Motions
+anläggningar. Alla köp av tjänster och andra produkter ses som ingångna avtal. För att
+leverera tjänsten behöver vi grundläggande spara dessa personuppgifter.
+
+
+Förklaring innehållsförteckning:
+
+
+Personnummer:
+Varje medlemskap är personligt.
+Personnummer säkerställer att rätt person tränar med rätt medlemskap.
+Personnummer säkerställer att åldergräns uppfylls.
+Personnummer krävs vid autogirobetalningar i de fall autogiromedlemskap valts.
+Personnummer krävs för att boka gruppträning i vårt bokningssystem. (6 första siffrorna)
+Personnummer krävs för att undvika dubbletter i vårt affärssystem.
+
+
+För- och efternamn:
+För- och efternamn krävs för att säkerställa att rätt person tränar med rätt medlemskap.
+
+Folkbokförd adress:
+Vid händelse av obetald faktura som skickats digitalt behöver vi kunna skicka fakturan till rätt adress med post. För att ditt träningskort ska fungera behöver det alltid vara debiterat, vid släpande betalningar spärras ditt träningskort och går ej att använda tills de obetalda fakturorna är betalda.
+
+Telefonnummer:
+Vi sparar ditt telefonnummer för att kunna kontakta dig. Exempel på tillfällen vi kan behöva komma i kontakt med dig: Informera om ändringar i dina bokningar, gratulera dig på födelsedagen (SMS), kommunicera ut viktig och plötslig information som du som medlem behöver känna till.
+
+
+E-post:
+E-post krävs för att kunna boka klasser (gruppträning) via webb eller bokningsapp.
+E-post är vårt huvudsakliga sätt att kommunicera medlemsinformation. Detta görs i form av nyhetsbrev max 4 ggr per år men också som påminnelse när abonnemang är på väg att löpa ut eller annan viktig information som rör ditt medlemskap.
+Umeå Sport & Motions bokningssystem kommunicerar med e-post. Vid händelse av tilldelad reservplats eller missad aktivitet kommuniceras detta via e-post.
+Obetalda fakturor skickar i första hand med e-post.
+
+Kontonummer:
+När kund väljer att betala sin träningsavgift månadsvis görs detta med autogiro. För att autogirobetalningar ska fungera krävs ett kontonummer som stämmer överens med rätt personnummer. Vid uppsägning av ett autogiromedlemskap raderas alla kontouppgifter automatiskt.
+
+Företag:
+För att kund ska tilldelas rätt abonnemang vid upprättat företagsavtal behöver Umeå Sport & Motion notera rätt företagsnamn på rätt person.
+Vid händelse av fakturering till företag sparas även fakturaadress, referens samt org.nr på aktuellt företag. Företagets uppgifter används endast vid faktureringstillfället.
+
+Bokningar, köp och inpasseringar:
+Inpasseringar sparas för att Umeå Sport & Motion ska kunna erbjuda en säker träningsmiljö.
+Inpasseringskontroller ger oss möjlighet att se vilka som passerar in och ut i våra lokaler och vid händelse av incident har vi möjlighet att se vilka som befunnit sig i lokalen.
+Inpasseringar och bokningar ger oss möjlighet att presentera träningsstatistik.
+Registrering av köp och tjänster ger oss möjlighet att kunna hantera återköp och göra ombokningar av tjänster.
+
+Anonymisering:
+Anonymisering gör så att information som registrerats i systemet inte längre kan tillskrivas en verklig person. När en registrerad person ska betraktas som ej aktiv och eventuellt anonymiseras beslutas av personuppgiftsansvarig.
+En registrerad person har rätt till anonymisering. För att bli anonymiserad/markerad för anonymisering får personen inte:
+● Ha en skuld
+● Ha oavslutade bokningar
+● Ha aktiva abonnemang (varken som betalare eller nyttjare)
+● Ha giltiga värdekort
+En anonymisering sker automatiskt 12 månader efter avslutat/utgånget abonnemang. Efter
+anonymiseringen finns inte längre några uppgifter om personen kvar och personen kan då
+inte hänvisa till gammalt abonnemang längre.
+
+
+En registrerad person som begär ett utdrag av vad som registrerats har rätt till detta.
+Eftersom det är viktigt att informationen endast lämnas ut till den registrerade personen och ingen annan behöver registrerad besöka anläggningen så att identifiering är möjlig.
+En registrerad person har rätt att begära ut en samlad information om de uppgifter som finns sparade utan kostnad vid 1 tillfälle. Vid flera utdrag tillkommer en kostnad på 200 kr/utdrag.
+
+Cookies:
+Vid inloggning sparas en cookie för att webbläsaren ska komma ihåg att besökaren är inloggad, denna cookie innehåller dock inga personuppgifter. Läs mer på “Om cookies”.
+
+Webbformulär:
+Alla formulär som fylls i på www.usm.nu raderas 3 månader efter att det skickats.

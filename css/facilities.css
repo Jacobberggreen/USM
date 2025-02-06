@@ -216,6 +216,7 @@
 
 /* Info-knapp */
 .info-icon {
+    font-family: "Times New Roman", Times, serif;
     font-size: 2.5rem;
     background: #ffc107;
     color: black;

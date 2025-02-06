@@ -1,0 +1,74 @@
+
+.info-banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    padding: 4vw 5vw 4vw 5vw;
+    text-align: center;
+    color: white;
+}
+
+#about-banner {
+    background: url('../pictures/om_oss_background.png') center/cover no-repeat;
+    border-radius: 5px;
+}
+
+#cookies-banner {
+    background: url('../pictures/cookies.jpg') center/cover no-repeat;
+    text-shadow: black 10px 10px 20px;
+}
+
+/* Skapa en svart toning ovanpå bakgrunden */
+#cookies-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 50% svart toning */
+    z-index: 1; /* Ser till att den lägger sig ovanpå bakgrunden */
+    border-radius: 5px;
+
+}
+
+/* Se till att texten hamnar ovanpå toningen */
+#cookies-banner * {
+    position: relative;
+    z-index: 2;
+}
+
+.about-content, .contact-content, .policy-content {
+    width: 70%;
+    background: #f0f0f0;;
+    margin: 2vw auto;
+    padding: 2vw;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 15px;
+}
+
+.about-text {
+    padding: 2vw 2vw 0 2vw;
+}
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+}
+
+
+.contact-text {
+    padding-top: 0.5vw;
+}
+
+iframe {
+    width: 100%;
+    height: 1800px;
+    border: none;
+    overflow: hidden;
+}
+

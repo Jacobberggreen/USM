@@ -32,15 +32,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500); // Vänta 500ms för att säkerställa att HTML har laddats
 
 
-    // -------------- Nav Scroll----------------
+    // -------------- Nav Scroll ----------------
     const header = document.querySelector("header");
 
     window.addEventListener("scroll", function () {
         const menuToggle = document.getElementById("menu-toggle");
         const navMenu = document.getElementById("nav-menu");
+        const logoImg = document.getElementById("logo-img");
+        const isHomePage = document.body.id === "home"; // Kolla om vi är på startsidan
+
+        function updateLogo() {
+            if (isHomePage && window.scrollY === 0) {
+                logoImg.src = "../pictures/logo_white.png"; // Genomskinlig navbar → Ljus logga
+            } else {
+                logoImg.src = "../pictures/logo.png"; // Skrollad navbar → Mörk logga
+            }
+        }
 
         if (window.scrollY > 50) {
             header.classList.add("scrolled");
+            updateLogo();
         } else {
             header.classList.remove("scrolled");
         }
@@ -48,10 +59,22 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.scrollY === 0) {
             navMenu.classList.remove("active");
         }
+
+        updateLogo();
     });
 
 
-    // -------------- Load Footer----------------
+    // -------------- Update Logo ----------------
+    function updateLogo() {
+        if (navbar.classList.contains("white")) {
+            logoImg.src = "../pictures/logo-dark.png"; // Byt till mörk logga
+        } else {
+            logoImg.src = "../pictures/logo-light.png"; // Byt till ljus logga
+        }
+    }
+
+
+    // -------------- Load Footer ----------------
     fetch("footer.html")
         .then(response => response.text())
         .then(data => {

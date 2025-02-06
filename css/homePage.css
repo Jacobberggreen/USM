@@ -163,7 +163,7 @@
 
 .facility-box {
     width: 70%;
-    margin-top: 8vw;
+    margin: 8vw auto;
 }
 
 #facilitys {
@@ -227,16 +227,4 @@
     border: none;
     cursor: pointer;
     color: white;
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
