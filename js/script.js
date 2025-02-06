@@ -73,6 +73,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // -------------- Update Hero ----------------
+    const video = document.getElementById("background-video");
+
+    // Kontrollera om enheten är en iPhone
+    function isIphone() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    if (isIphone()) {
+        // Skapa en GIF-bild som ersätter videon
+        const gif = document.createElement("img");
+        gif.src = "../media/gym_gif.gif"; // Se till att du har en GIF-version av din video
+        gif.alt = "Gym video";
+        gif.style.width = "100%"; // Anpassa så att det fyller sektionen
+        gif.style.height = "auto";
+
+        // Ersätt videon med GIF
+        video.parentNode.replaceChild(gif, video);
+    }
+
 
     // -------------- Load Footer ----------------
     fetch("footer.html")
