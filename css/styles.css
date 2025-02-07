@@ -762,13 +762,50 @@ nav ul li a {
         font-size: 3vw !important;
     }
 
+    .contact-table,
+    .contact-table thead,
+    .contact-table tbody,
+    .contact-table th,
+    .contact-table td,
+    .contact-table tr {
+        display: block;
+    }
+
+    .contact-table thead {
+        display: none; /* Döljer tabellrubriker på mobil */
+    }
+
+    .contact-table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-table td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact-table td:last-child {
+        border-bottom: none;
+    }
+
+    .contact-table td::before {
+        content: attr(data-label); /* Använder HTML-attribut för rubriker */
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+
     iframe {
         height: 2300px;
     }
 
 
     /*---------------Footer-------------------*/
-    .footer-links, .contact-grid {
+    .footer-links {
         display: flex;
         flex-direction: column;
         align-items: center;
