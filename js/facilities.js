@@ -7,20 +7,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const map = L.map("map").setView([63.825733, 20.289039], zoomLevel);
 
-    // Lägg till kartlager (t.ex. OpenStreetMap)
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
     // Lyssna på fönsterstorleksändringar och uppdatera zoomnivån vid behov
     window.addEventListener("resize", function () {
         let newZoom = window.innerWidth <= 768 ? 12 : 13;
         map.setZoom(newZoom); // Uppdatera zoomnivån vid ändring
     });
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; OpenStreetMap contributors'
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+        attribution: '&copy; <a href="https://www.esri.com/">Esri</a>',
+        maxZoom: 19
     }).addTo(map);
+
 
     // Lägg till öppettider för varje gym
     const now = new Date();

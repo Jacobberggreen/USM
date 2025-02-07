@@ -163,57 +163,6 @@
     flex-wrap: wrap;
     justify-content: space-between; /* Jämnt avstånd mellan boxarna och kanterna */
     width: 90%; /* Lämnar 5% marginal på vardera sida */
-    margin: auto; /* Centrerar hela raden */
+    margin: auto;
     gap: 20px; /* Mellanrum mellan boxarna */
-}
-
-.info-box {
-    width: calc(50% - 10px); /* Tar upp halva utrymmet minus gap */
-    height: 15vw;
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
-}
-
-/* Info-boxar */
-.info-box {
-    display: flex;
-    margin: 50px auto;
-    width: 40%;
-    height: 15vw;
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
-}
-
-.info-box img {
-    width: 40%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
-}
-
-.info-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.info-text {
-    padding: 1vw;
-    text-align: center;
-    font-size: 1.2vw;
-}
-
-.info-button-box {
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 2vw;
 }

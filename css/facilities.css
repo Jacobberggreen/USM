@@ -9,6 +9,11 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
 }
 
+.leaflet-tile {
+    filter: saturate(0) brightness(90%) contrast(80%) !important;
+}
+
+
 /* Popup-rutan med bättre bildanpassning */
 .custom-popup {
     position: relative;
@@ -153,18 +158,22 @@
 /* Specifika bakgrunder för varje gym */
 #utopia .gym-background {
     background-image: url('../pictures/utopia_1200x320.jpg');
+    filter: saturate(0) brightness(40%);
 }
 
 #ostra .gym-background {
     background-image: url('../pictures/ostra_1200x320.jpg');
+    filter: saturate(0) brightness(40%);
 }
 
 #mariehem .gym-background {
     background-image: url('../pictures/mariehem_1200x320.jpg');
+    filter: saturate(0) brightness(40%);
 }
 
 #navet .gym-background {
     background-image: url('../pictures/navet_1200x320.jpg');
+    filter: saturate(0) brightness(40%);
 }
 
 /* Gym-information */
@@ -220,7 +229,7 @@
     font-size: 2.5rem;
     background: #ffc107;
     color: black;
-    padding: 0 0.9vw 0 0.9vw;
+    padding: 0 1.2vw 0 1.2vw;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;

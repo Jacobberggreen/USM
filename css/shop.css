@@ -7,14 +7,6 @@
     gap: 20px; /* Mellanrum mellan boxarna */
 }
 
-.shop-box {
-    width: calc(50% - 10px); /* Tar upp halva utrymmet minus gap */
-    height: 15vw;
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
-}
 
 /* Se till att tredje boxen blir centrerad */
 .shop-items .shop-box:last-child {
@@ -22,48 +14,6 @@
     text-align: center;
 }
 
-
-/* Info-boxar */
-.shop-box {
-    display: flex;
-    margin: 50px auto;
-    width: 40%;
-    height: 15vw;
-    background: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 2px 1px 10px;
-}
-
-.shop-box img {
-    width: 40%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px;
-}
-
-.shop-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.shop-text {
-    padding: 1vw;
-    text-align: center;
-    font-size: 1.2vw;
-}
-
-.shop-button-box {
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 2vw;
-}
 
 .special-btn1 {
     width: 15%;

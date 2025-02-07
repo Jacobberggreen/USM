@@ -8,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
     background: rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 15px;
@@ -21,6 +20,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: saturate(0);
 }
 
 
@@ -39,7 +39,9 @@
     margin-top: 8vw;
     position: relative;
     z-index: 2;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .hero-buttons {
@@ -196,6 +198,7 @@
     height: 100%;
     object-fit: cover; /* Ser till att bilder täcker hela boxen */
     display: block;
+    filter: saturate(0);
 }
 
 /* Overlay för text */
@@ -231,12 +234,4 @@
     align-items: center;
     position: relative;
     margin-top: 5vw;
-}
-
-.large-btn {
-    font-size: 20px;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    color: white;
 }

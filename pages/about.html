@@ -42,35 +42,65 @@
 
     <div class="contact-content">
         <h2>Kontaktuppgifter:</h2>
-        <div class="contact-grid">
-            <div class="contact-text">
-                <p style="font-weight: 700">USM i Utopia</p>
-                <p>Telefon: 090-12 50 49</p>
-                <p>Epost: usm@usm.nu </p>
-                <p>Skolgatan 62 A</p>
-            </div>
-            <div class="contact-text">
-                <p style="font-weight: 700">USM i Navet</p>
-                <p>Telefon: 090-12 50 49</p>
-                <p>Epost: usm@usm.nu </p>
-                <p>Västra Kyrkogatan 6</p>
-            </div>
-            <div class="contact-text">
-                <p style="font-weight: 700">USM på Östra</p>
-                <p>Telefon: 090-12 50 50</p>
-                <p>Epost: usm@usm.nu </p>
-                <p>Östermalmsgatan 63 A</p>
-            </div>
-            <div class="contact-text">
-                <p style="font-weight: 700">USM på Mariehem</p>
-                <p>Telefon: 090-12 50 51</p>
-                <p>Epost: usm@usm.nu </p>
-                <p>Mariehemsvägen 10 E</p>
-            </div>
-        </div>
+        <table class="contact-table">
+            <thead>
+            <tr>
+                <th>Anläggning</th>
+                <th>Telefon</th>
+                <th>E-post</th>
+                <th>Adress</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="contact-text">
+                <td><strong>USM i Utopia</strong></td>
+                <td>090-12 50 49</td>
+                <td>usm@usm.nu</td>
+                <td>Skolgatan 62 A</td>
+            </tr>
+            <tr class="contact-text">
+                <td><strong>USM i Navet</strong></td>
+                <td>090-12 50 49</td>
+                <td>usm@usm.nu</td>
+                <td>Västra Kyrkogatan 6</td>
+            </tr>
+            <tr class="contact-text">
+                <td><strong>USM på Östra</strong></td>
+                <td>090-12 50 50</td>
+                <td>usm@usm.nu</td>
+                <td>Östermalmsgatan 63 A</td>
+            </tr>
+            <tr class="contact-text">
+                <td><strong>USM på Mariehem</strong></td>
+                <td>090-12 50 51</td>
+                <td>usm@usm.nu</td>
+                <td>Mariehemsvägen 10 E</td>
+            </tr>
+            </tbody>
+        </table>
+
         <a class="facility-link karta-link" href="facilities.html">
             Visa på kartan <span class="arrow">➤</span>
         </a>
+
+        <section class="contact-form">
+            <h2>Kontakta oss</h2>
+            <form id="email-form">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-info">Skicka</button>
+            </form>
+
+            <p id="form-message"></p>
+        </section>
+
     </div>
 
 
