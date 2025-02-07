@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Video, mute-knapp eller pause-knapp hittades inte i HTML.");
     }
 
-    // -------------- Update Hero ----------------
+    /* -------------- Update Hero ----------------
     function isIphone() {
         return /iPhone|iPad|iPod/i.test(navigator.userAgent);
     }
@@ -46,6 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         gif.classList.add("hero-img");
 
         video.replaceWith(gif); // Ersätt videon med GIF utan att lägga till onödiga mått
-    }
+    }*/
 
 });
