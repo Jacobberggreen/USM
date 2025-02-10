@@ -689,6 +689,12 @@ nav ul li a {
         height: 40vw;
     }
 
+    .gym-hours {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
     .custom-popup-content .popup-title {
         font-size: 5.8vw;
     }
