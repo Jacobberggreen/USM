@@ -86,7 +86,7 @@ a {
     box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 50px;
 }
 
-.page-text p {
+.page-text h1, .page-text p {
     font-size: 3vw;
     font-weight: bold;
     color: white;
