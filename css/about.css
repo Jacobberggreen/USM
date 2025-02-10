@@ -25,12 +25,15 @@
     font-weight: bold;
     color: var(--primary-color);
     letter-spacing: 1px;
-    text-shadow: rgba(0, 0, 0) 0 0 5px;
+    text-shadow: rgba(0, 0, 0) 0 0 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5vw;
+    border-radius: 20px;
 }
 
 #about-banner {
-    background: url('../pictures/om_oss_background.png') center/cover no-repeat;
-    border-radius: 5px;
+    background: url('../pictures/dumbells.png') center/cover no-repeat;
+    border-radius: 20px;
 }
 
 .about-text {
@@ -122,6 +125,7 @@
 #cookies-banner {
     background: url('../pictures/cookies.jpg') center/cover no-repeat;
     text-shadow: black 10px 10px 20px;
+    border-radius: 20px;
 }
 
 /* Skapa en svart toning ovanpå bakgrunden */
@@ -134,7 +138,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* 50% svart toning */
     z-index: 1; /* Ser till att den lägger sig ovanpå bakgrunden */
-    border-radius: 5px;
+    border-radius: 20px;
 
 }
 
