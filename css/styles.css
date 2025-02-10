@@ -647,6 +647,10 @@ nav ul li a {
         height: 40vw;
     }
 
+    .custom-popup-content .popup-title {
+        font-size: 5.8vw;
+    }
+
     .info-icon {
         font-size: 2rem;
         padding: 0 2vw 0 2vw;
