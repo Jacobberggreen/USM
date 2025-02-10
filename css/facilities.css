@@ -146,26 +146,22 @@
 /* Specifika bakgrunder för varje gym */
 #utopia .gym-background {
     background-image: url('../pictures/utopia_1200x320.jpg');
-    opacity: 90%;
-    filter: saturate(0) brightness(40%);
+    filter: saturate(0) brightness(45%);
 }
 
 #ostra .gym-background {
     background-image: url('../pictures/ostra_1200x320.jpg');
-    opacity: 90%;
-    filter: saturate(0) brightness(40%);
+    filter: saturate(0) brightness(45%);
 }
 
 #mariehem .gym-background {
     background-image: url('../pictures/mariehem_1200x320.jpg');
-    opacity: 90%;
-    filter: saturate(0) brightness(40%);
+    filter: saturate(0) brightness(45%);
 }
 
 #navet .gym-background {
     background-image: url('../pictures/navet_1200x320.jpg');
-    opacity: 90%;
-    filter: saturate(0) brightness(40%);
+    filter: saturate(0) brightness(45%);
 }
 
 /* Gym-information */
