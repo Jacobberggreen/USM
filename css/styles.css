@@ -715,7 +715,7 @@ nav ul li a {
     }
 
     /*---------------Shop-------------------*/
-    .page-text h1 {
+    .page-text h1, .page-text p {
         font-size: 7vw;
     }
 
