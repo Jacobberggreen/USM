@@ -2,11 +2,11 @@
 
 .facilities-container {
     margin: 1vw auto;
-    width: 95%;
+    width: 90%;
     display: grid;
     grid-template-areas: "container-1 map container-2";
     grid-template-columns: 1fr 1.5fr 1fr;
-    gap: 2vw;
+    gap: 3vw;
 }
 
 #container-1 {
@@ -60,7 +60,7 @@
     background-size: cover; /* Ser till att bilden täcker hela ytan */
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%); /* Svart overlay för bättre textläsbarhet */
+    filter: brightness(50%) saturate(20%); /* Svart overlay för bättre textläsbarhet */
     z-index: 0;
 }
 
@@ -146,21 +146,25 @@
 /* Specifika bakgrunder för varje gym */
 #utopia .gym-background {
     background-image: url('../pictures/utopia_1200x320.jpg');
+    opacity: 90%;
     filter: saturate(0) brightness(40%);
 }
 
 #ostra .gym-background {
     background-image: url('../pictures/ostra_1200x320.jpg');
+    opacity: 90%;
     filter: saturate(0) brightness(40%);
 }
 
 #mariehem .gym-background {
     background-image: url('../pictures/mariehem_1200x320.jpg');
+    opacity: 90%;
     filter: saturate(0) brightness(40%);
 }
 
 #navet .gym-background {
     background-image: url('../pictures/navet_1200x320.jpg');
+    opacity: 90%;
     filter: saturate(0) brightness(40%);
 }
 
@@ -254,9 +258,9 @@
     display: flex;
     justify-content: center;
     width: 39%;
-    margin: 0.5vw auto;
+    margin: 2vw auto;
     background: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
 }
@@ -268,7 +272,6 @@
     color: white;
     font-weight: bold;
     text-align: center;
-
 }
 
 .status-icon {

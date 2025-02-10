@@ -16,19 +16,19 @@
     margin: 20px auto;
     position: relative;
     width: 80%;
-    overflow: hidden; /* Tar bort oönskad scroll */
+    overflow: hidden
 }
 
 .date-list {
     display: flex;
     gap: 10px;
-    overflow: hidden; /* Inget scrollbart innehåll, navigering endast via knappar */
+    overflow: hidden;
     scroll-behavior: smooth;
     padding: 10px;
     white-space: nowrap;
     justify-content: center;
     align-items: center;
-    max-width: 80%; /* Gör plats för exakt 7 element */
+    max-width: 80%;
 
 }
 
@@ -86,8 +86,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    margin: 0 auto;
-    margin-top: 5px;
+    margin: 5px auto;
     max-width: 90%;
 }
 
@@ -100,8 +99,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    margin: 0 auto;
-    margin-top: 5px;
+    margin: 5px auto;
     max-width: 90%;
 }
 
@@ -127,8 +125,7 @@
 .info-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Jämnt avstånd mellan boxarna och kanterna */
-    width: 90%; /* Lämnar 5% marginal på vardera sida */
-    margin: auto;
-    gap: 20px; /* Mellanrum mellan boxarna */
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }

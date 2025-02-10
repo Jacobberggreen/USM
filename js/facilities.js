@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Skapa kartan och sätt startposition (Umeå)
     let zoomLevel = window.innerWidth <= 768 ? 12 : 13; // Välj zoom baserat på skärmstorlek
 
-    const map = L.map("map").setView([63.825733, 20.289039], zoomLevel);
+    const map = L.map("map").setView([63.826, 20.297], zoomLevel);
 
     // Lyssna på fönsterstorleksändringar och uppdatera zoomnivån vid behov
     window.addEventListener("resize", function () {

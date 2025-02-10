@@ -11,6 +11,8 @@
     text-align: center;
     background: rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 15px;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 
 }
 
