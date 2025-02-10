@@ -77,20 +77,23 @@ a {
 }
 
 .page-text {
-    background: var(--primary-color);
+    background: url('../pictures/om_oss_background.png') center/cover no-repeat;
+    border-top: 5px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
     text-align: center;
-    padding: 60px 0;
-    margin-top: 80px;
+    padding: 100px 0;
+    margin-top: 90px;
     box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 50px;
-    text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
 }
 
 .page-text h1 {
-    font-size: 32px;
+    font-size: 3vw;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0) 0 0 15px;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 /*-------------------------------------------Login Box----------------------------------------------*/
@@ -179,12 +182,14 @@ header {
     top: 0;
     left: 0;
     z-index: 1000000;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
     transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 @media (min-width: 961px) {
     body#home header {
         background: rgba(0, 0, 0, 0);
+        box-shadow: none;
     }
 
     body#home header:hover {
@@ -301,7 +306,7 @@ nav ul li a {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 1.5vw;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
     cursor: pointer;
     border: none;
     outline: none;
@@ -320,7 +325,7 @@ nav ul li a {
     display: inline-block;
     width: 30%;
     text-align: center;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
     cursor: pointer;
     border: none;
     outline: none;
@@ -331,6 +336,20 @@ nav ul li a {
     transform: scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.2) 2px 4px 5px;
     text-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
+}
+
+.selectInfo, .selectLarge {
+    font-size: 1vw;
+    width: auto !important;
+    height: auto !important;
+    appearance: none; /* Tar bort standardstil på vissa webbläsare */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selectLarge {
+    font-size: 2vw !important;
+    padding: 1vw 2vw !important;
 }
 
 .btn-info:hover {
@@ -429,7 +448,11 @@ nav ul li a {
 }
 
 /*-------------------------------------------Mobil och mindre skärmar----------------------------------------------*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1160px) {
+    .gym-hours {
+        margin-right: 2.4vw;
+    }
+
     .about-content, .contact-content, .policy-content {
         width: 90%;
     }
@@ -504,6 +527,16 @@ nav ul li a {
     .gray-box-text p {
         font-size: 3.5vw;
         margin: 5% 0 5% 0;
+    }
+
+    .selectInfo, .selectLarge {
+        font-size: 2vw !important;
+        width: 40% !important;
+    }
+
+    .selectLarge {
+        font-size: 3vw !important;
+        width: 40% !important;
     }
     /*---------------Homepage-------------------*/
     .hero-text h1 {
@@ -635,6 +668,14 @@ nav ul li a {
 
 
     /*---------------Anläggningar-------------------*/
+    .facilities-container {
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
     #map {
         width: 95%;
         height: 70vw;
@@ -655,6 +696,14 @@ nav ul li a {
         font-size: 2rem;
         padding: 0 2vw 0 2vw;
         top: 15px;
+    }
+
+    .gym-status-container {
+        width: 60%;
+    }
+
+    .status-icon {
+        font-size: 0.8rem;
     }
 
     /*---------------Shop-------------------*/
@@ -842,6 +891,18 @@ nav ul li a {
 
 @media screen and (max-width: 570px) {
 
+    /*---------------Standar mallar-------------------*/
+    .selectInfo, .selectLarge {
+        font-size: 4vw !important;
+        width: 70% !important;
+    }
+
+    .selectLarge {
+        font-size: 5vw !important;
+        width: 60% !important;
+    }
+
+
     /*---------------Homepage-------------------*/
     .facility-grid {
         display: grid;
@@ -903,8 +964,12 @@ nav ul li a {
         padding: 0;
     }
 
+    .gym-status-container {
+        width: 90%;
+    }
+
     .status-icon {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     /*---------------About-Policy-Cookies-------------------*/

@@ -19,27 +19,6 @@
     margin: 40px 0;
 }
 
-#facility-select {
-    width: 24vw;
-    padding: 1vw;
-    font-size: 1.5vw;
-    border: 2px solid #ffc107;
-    background: white;
-    color: black;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px;
-    border-radius: 2px;
-
-    appearance: none; /* Tar bort standardstil på vissa webbläsare */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='black'><path d='M7 10l5 5 5-5z'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 15px center; /* Flytta pilen mer inåt */
-    background-size: 18px; /* Anpassa pilens storlek */
-}
-
 /* Medlemskapskort */
 .membership-cards {
     display: flex;

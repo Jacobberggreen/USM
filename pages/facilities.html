@@ -28,83 +28,90 @@
         <h1>VÅRA ANLÄGGNINGAR</h1>
     </section>
 
-    <div id="map"></div>
+    <div class="facilities-container">
 
-    <div class="gym-info-container">
-        <!-- UTOPIA -->
-        <div class="gym-card" id="utopia">
-            <div class="gym-background"></div>
-            <div class="gym-content">
-                <h2>Utopia</h2>
-                <p class="gym-hours" data-gym="Utopia">
-                    Mån-Tors: 05:00 - 23:00<br>
-                    Fredag: 05:00 - 21:00<br>
-                    Lördag: 09:00 - 18:00<br>
-                    Söndag: 05:00 - 23:00
-                </p>
+        <div id="map"></div>
+
+        <div id="container-1" class="gym-info-container">
+            <!-- UTOPIA -->
+            <div class="gym-card" id="utopia">
+                <div class="gym-background"></div>
+                <div class="gym-content">
+                    <h2>Utopia</h2>
+                    <p class="gym-hours" data-gym="Utopia">
+                        Mån-Tors: 05:00 - 23:00<br>
+                        Fredag: 05:00 - 21:00<br>
+                        Lördag: 09:00 - 18:00<br>
+                        Söndag: 05:00 - 23:00
+                    </p>
+                </div>
+                <div class="info-icon" onclick="toggleInfo('utopia-info')">i</div>
+                <div class="gym-info-slide" id="utopia-info">
+                    <p>📍 Skolgatan 62 A, Umeå</p>
+                    <p>📞 090-123 456</p>
+                </div>
             </div>
-            <div class="info-icon" onclick="toggleInfo('utopia-info')">i</div>
-            <div class="gym-info-slide" id="utopia-info">
-                <p>📍 Skolgatan 62 A, Umeå</p>
-                <p>📞 090-123 456</p>
+
+            <!-- NAVET -->
+            <div class="gym-card" id="navet">
+                <div class="gym-background"></div>
+                <div class="gym-content">
+                    <h2>Navet</h2>
+                    <p class="gym-hours" data-gym="Navet">
+                        Mån-Fre: 05:00 - 22:00<br>
+                        Lör-Sön: 06:00 - 21:00
+                    </p>
+                </div>
+                <div class="info-icon" onclick="toggleInfo('navet-info')">i</div>
+                <div class="gym-info-slide" id="navet-info">
+                    <p>📍 Västra Kyrkogatan 6, Umeå</p>
+                    <p>📞 090-567 890</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container-2" class="gym-info-container">
+
+            <!-- MARIEHEM -->
+            <div class="gym-card" id="mariehem">
+                <div class="gym-background"></div>
+                <div class="gym-content">
+                    <h2>Mariehem</h2>
+                    <p class="gym-hours" data-gym="Mariehem">
+                        Mån-Tors: 05:00 - 23:00<br>
+                        Fre-Lör: 05:00 - 22:00<br>
+                        Söndag: 05:00 - 23:00
+                    </p>
+                </div>
+                <div class="info-icon" onclick="toggleInfo('mariehem-info')">i</div>
+                <div class="gym-info-slide" id="mariehem-info">
+                    <p>📍 Mariehemsvägen 10 E, Umeå</p>
+                    <p>📞 090-345 678</p>
+                </div>
+            </div>
+
+            <!-- ÖSTRA -->
+            <div class="gym-card" id="ostra">
+                <div class="gym-background"></div>
+                <div class="gym-content">
+                    <h2>Östra</h2>
+                    <p class="gym-hours" data-gym="Östra">
+                        Mån-Tors: 05:00 - 23:00<br>
+                        Fredag: 05:00 - 21:00<br>
+                        Lördag: 09:00 - 18:00<br>
+                        Söndag: 05:00 - 23:00
+                    </p>
+                </div>
+                <div class="info-icon" onclick="toggleInfo('ostra-info')">i</div>
+                <div class="gym-info-slide" id="ostra-info">
+                    <p>📍 Östermalmsgatan 63 A, Umeå</p>
+                    <p>📞 090-789 012</p>
+                </div>
             </div>
         </div>
 
-        <!-- ÖSTRA -->
-        <div class="gym-card" id="ostra">
-            <div class="gym-background"></div>
-            <div class="gym-content">
-                <h2>Östra</h2>
-                <p class="gym-hours" data-gym="Östra">
-                    Mån-Tors: 05:00 - 23:00<br>
-                    Fredag: 05:00 - 21:00<br>
-                    Lördag: 09:00 - 18:00<br>
-                    Söndag: 05:00 - 23:00
-                </p>
-            </div>
-            <div class="info-icon" onclick="toggleInfo('ostra-info')">i</div>
-            <div class="gym-info-slide" id="ostra-info">
-                <p>📍 Östermalmsgatan 63 A, Umeå</p>
-                <p>📞 090-789 012</p>
-            </div>
-        </div>
-
-        <!-- MARIEHEM -->
-        <div class="gym-card" id="mariehem">
-            <div class="gym-background"></div>
-            <div class="gym-content">
-                <h2>Mariehem</h2>
-                <p class="gym-hours" data-gym="Mariehem">
-                    Mån-Tors: 05:00 - 23:00<br>
-                    Fredag-Lördag: 05:00 - 22:00<br>
-                    Söndag: 05:00 - 23:00
-                </p>
-            </div>
-            <div class="info-icon" onclick="toggleInfo('mariehem-info')">i</div>
-            <div class="gym-info-slide" id="mariehem-info">
-                <p>📍 Mariehemsvägen 10 E, Umeå</p>
-                <p>📞 090-345 678</p>
-            </div>
-        </div>
-
-        <!-- NAVET -->
-        <div class="gym-card" id="navet">
-            <div class="gym-background"></div>
-            <div class="gym-content">
-                <h2>Navet</h2>
-                <p class="gym-hours" data-gym="Navet">
-                    Mån-Fre: 05:00 - 22:00<br>
-                    Lör-Sön: 06:00 - 21:00
-                </p>
-            </div>
-            <div class="info-icon" onclick="toggleInfo('navet-info')">i</div>
-            <div class="gym-info-slide" id="navet-info">
-                <p>📍 Västra Kyrkogatan 6, Umeå</p>
-                <p>📞 090-567 890</p>
-            </div>
-        </div>
     </div>
-
 
     <div class="gym-status-container">
         <div class="gym-status-info">
@@ -115,6 +122,8 @@
             </p>
         </div>
     </div>
+
+
 
 
 </section>

@@ -139,7 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const hoursLines = p.innerHTML.split("<br>");
             const updatedLines = hoursLines.map(line => {
                 if (isCurrentDay(line)) {
-                    return `<span style="color: ${statusColor};">${statusIcon} ${line}</span>`;
+                    // return `<span style="color: ${statusColor};">${statusIcon} ${line}</span>`;
+                    return `<span style="color: ${statusColor};"> ${line}</span>`;
                 }
                 return `<span style="color: white;">${line}</span>`;
             });
