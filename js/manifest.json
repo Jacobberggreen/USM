@@ -1,10 +1,10 @@
 {
   "name": "USM APP",
   "short_name": "USM",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "description": "A simple Progressive Web App example.",
+  "description": "USM Web App.",
   "icons": [
     {
       "src": "../pictures/fav.png",
