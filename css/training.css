@@ -38,7 +38,7 @@
     background: #EAEAEA;
     padding: 10px 15px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     min-width: 100px;
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
@@ -67,7 +67,7 @@
 .scroll-btn {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     padding: 10px;
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
@@ -108,7 +108,7 @@
     background: #F5F5F5;
     border-radius: 5px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -117,7 +117,7 @@
     background: #F5F5F5;
     border-radius: 5px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 

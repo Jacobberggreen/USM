@@ -42,11 +42,11 @@
 
 body {
     font-family: Figtree, sans-serif;
-    font-size: 16px; /* Standardstorlek */
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Hindrar horisontell scroll på små skärmar */
+    overflow-x: hidden;
 }
 
 html {
@@ -74,6 +74,15 @@ a {
     font-family: Figtree, sans-serif;
     font-size: 1.5vw;
     text-decoration: none;
+}
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
 }
 
 .page-text {
@@ -162,7 +171,7 @@ a {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -229,7 +238,7 @@ header {
     /* Menylänkar */
     body#home nav ul li a {
         color: white;
-        transition: color 0.3s ease;
+        transition: color 0.2s ease, transform 0.2s ease;
     }
 
     body#home .menu-toggle {
@@ -266,7 +275,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -286,7 +295,7 @@ nav ul li a {
 /* Döljer hamburgermenyn på stora skärmar */
 .menu-toggle {
     display: none;
-    font-size: 50px;
+    font-size: 3.13rem;
     cursor: pointer;
     background: none;
     border: none;
@@ -426,7 +435,7 @@ nav ul li a {
 
 .footer-column h3 {
     color: #666666;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -442,7 +451,7 @@ nav ul li a {
 .footer-column ul li a {
     color: #666666;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.88rem;
 }
 
 .footer-column ul li a:hover {
@@ -499,7 +508,7 @@ nav ul li a {
     }
 
     header .no a{
-        font-size: 15px;
+        font-size: 0.94rem;
         padding-bottom: 15px;
     }
 
@@ -541,10 +550,18 @@ nav ul li a {
         width: 40% !important;
     }
     /*---------------Homepage-------------------*/
+    .hero-text {
+        margin-top: 200px;
+    }
+
     .hero-text h1 {
         width: 100%;
         font-size: 6vw;
-        margin: 15vw auto;
+        margin-bottom: 20vw;
+    }
+
+    .hero-text .btn-large {
+        margin-bottom: 10vw;
     }
 
     .hero-buttons a {
@@ -883,15 +900,15 @@ nav ul li a {
     }
 
     .footer-column {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .footer-links h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .footer-links ul li a {
-        font-size: 15px;
+        font-size: 0.94rem;
     }
 
 }
@@ -912,6 +929,10 @@ nav ul li a {
 
 
     /*---------------Homepage-------------------*/
+    .hero-text {
+        margin-top: 300px;
+    }
+
     .facility-grid {
         display: grid;
         grid-template-columns: repeat(1, 4fr);

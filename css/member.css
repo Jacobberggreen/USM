@@ -54,12 +54,12 @@
 }
 
 .card-content h2 {
-    font-size: 18px;
+    font-size: 1.13rem;
     margin-bottom: 10px;
 }
 
 .card-content p {
-    font-size: 14px;
+    font-size: 0.88rem;
     color: #333;
 }
 
