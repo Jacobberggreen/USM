@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Map Icon
     const customIcon = L.icon({
-        iconUrl: "/pictures/map_marker.png", // Lokal ikon
+        iconUrl: "../pictures/map_marker.png", // Lokal ikon
         iconSize: [50, 50],
         iconAnchor: [25, 40],
         popupAnchor: [1, -34]
