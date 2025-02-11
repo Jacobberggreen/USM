@@ -58,29 +58,34 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Fel vid laddning av footer:", error));
 
+    // Funktion som sätter upp login-menyn
+    function setupLoginMenu() {
+        const loginLink = document.querySelector(".login-link");
+        const loginDropdown = document.getElementById("login-dropdown");
+        const closeBtn = document.querySelector(".close-btn");
 
-    // --------------Login----------------
-    const loginLink = document.querySelector(".login-link");
-    const loginDropdown = document.getElementById("login-dropdown");
-    const closeBtn = document.querySelector(".close-btn");
+        if (loginLink && loginDropdown && closeBtn) {
+            // Öppna login-popup vid klick på "Logga In"
+            loginLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                loginDropdown.style.display = "flex";
+            });
 
-    // Öppna login-popup vid klick på "Logga In"
-    loginLink.addEventListener("click", function (event) {
-        event.preventDefault();
-        loginDropdown.style.display = "flex";
-    });
+            // Stäng popup när man klickar på "X"
+            closeBtn.addEventListener("click", function () {
+                loginDropdown.style.display = "none";
+            });
 
-    // Stäng popup när man klickar på "X"
-    closeBtn.addEventListener("click", function () {
-        loginDropdown.style.display = "none";
-    });
-
-    // Stäng popup om man klickar utanför rutan
-    window.addEventListener("click", function (event) {
-        if (event.target === loginDropdown) {
-            loginDropdown.style.display = "none";
+            // Stäng popup om man klickar utanför rutan
+            window.addEventListener("click", function (event) {
+                if (event.target === loginDropdown) {
+                    loginDropdown.style.display = "none";
+                }
+            });
+        } else {
+            console.warn("Login-element hittades inte vid navbar-laddning.");
         }
-    });
+    }
 
 
     // --------------link centered----------------
