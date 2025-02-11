@@ -1,16 +1,16 @@
 <!-- Inloggningsdropdown -->
-<div id="login-dropdown" class="login-dropdown">
+<div class="login-dropdown" id="login-dropdown">
     <div class="login-box">
         <span class="close-btn">&times;</span>
         <h2>Logga In</h2>
         <form>
             <label for="email">E-post</label>
-            <input type="email" id="email" placeholder="Ange din e-post" required>
+            <input id="email" placeholder="Ange din e-post" required type="email">
 
             <label for="password">Lösenord</label>
-            <input type="password" id="password" placeholder="Ange ditt lösenord" required>
+            <input id="password" placeholder="Ange ditt lösenord" required type="password">
 
-            <button type="submit" class="btn-login">Logga In</button>
+            <button class="btn-login" type="submit">Logga In</button>
         </form>
     </div>
 </div>
@@ -19,7 +19,7 @@
 <div class="nav-container">
     <div class="logo">
         <a href="index.html">
-            <img id="logo-img" src="pictures/logo.png" alt="Logo">
+            <img alt="Logo" id="logo-img" src="pictures/logo.png">
         </a>
     </div>
 
@@ -27,13 +27,13 @@
     <button class="menu-toggle" id="menu-toggle">☰</button>
 
     <nav>
-        <ul id="nav-menu">
+        <ul class="nav-center" id="nav-menu">
             <li class="list-space yes"><a href="shop.html" rel="noopener noreferrer">Shop</a></li>
             <li class="list-space yes"><a href="training.html">Boka Träning</a></li>
             <li class="list-space yes"><a href="facilities.html">Öppettider</a></li>
-            <li class="list-space no"><a href="member.html" class="btn-info btn-resp" style="width: 80%">BLI MEDLEM</a>
+            <li class="list-space no"><a class="btn-info btn-resp" href="member.html" style="width: 80%">BLI MEDLEM</a>
             </li>
-            <li class="list-space yes"><a href="#" class="login-link">Logga In</a></li>
+            <li class="list-space yes"><a class="login-link" href="#">Logga In</a></li>
         </ul>
     </nav>
 </div>
