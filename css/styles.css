@@ -297,7 +297,8 @@ nav ul li a {
     color: black;
     position: absolute;
     align-content: center;
-    right: 0.7rem;
+    right: 5px;
+    padding: 0;
 }
 
 
