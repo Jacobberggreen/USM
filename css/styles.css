@@ -431,7 +431,7 @@ nav ul li a {
     background: #ffffff;
     color: #000000;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0;
     justify-content: space-around;
     padding: 40px 60px;
@@ -828,10 +828,9 @@ nav ul li a {
     }
 
     .schedule-wrapper {
-        overflow-x: auto; /* Aktiverar horisontell scroll */
+        overflow-x: auto;
         white-space: nowrap;
         padding: 2vw;
-
         margin: 0 auto;
         width: 90%;
         border: 2px solid rgba(0, 0, 0, 0.2);
@@ -841,7 +840,7 @@ nav ul li a {
 
     #training .info-items {
         justify-content: center;
-        margin: 0 auto 10vw auto; /* Centrerar hela raden */
+        margin: 0 auto 10vw auto;
     }
 
     #training .info-box {
@@ -1049,4 +1048,49 @@ nav ul li a {
     }
 
 }
+
+
+@media print {
+
+    header, footer {
+        display: none;
+    }
+
+    /* Bevara bakgrundsfärger och bilder */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Se till att bilder visas korrekt */
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        page-break-inside: avoid;
+    }
+
+    /* Bevara bakgrundsfärg på länkar */
+    a {
+        background-color: inherit;
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    .page-text {
+        margin-top: 0;
+        padding: 60px 0;
+    }
+
+    .about-content, .contact-content {
+        margin-bottom: 45vw;
+        width: 95%;
+    }
+
+    .contact-form {
+        display: none;
+    }
+
+}
+
 
