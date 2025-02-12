@@ -115,7 +115,7 @@ a[x-apple-data-detectors] {
 
 .page-icon {
     color: white;
-    font-size: 5rem !important;
+    font-size: 400% !important;
 }
 
 /*-------------------------------------------Login Box----------------------------------------------*/
@@ -150,19 +150,13 @@ a[x-apple-data-detectors] {
 }
 
 .login-box input {
-    width: 100%; /* Se till att inputfälten fyller hela boxen */
-    max-width: 280px; /* Anpassa för att inte gå för långt ut */
+    width: 100%;
+    max-width: 280px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-}
-
-/* Fix för knappen */
-.login-box .btn-yellow {
-    width: 100%; /* Gör att knappen fyller ut boxen korrekt */
-    max-width: 280px;
 }
 
 /* Fade-in animation */
@@ -177,7 +171,6 @@ a[x-apple-data-detectors] {
     }
 }
 
-/* Stängningsknapp */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -186,14 +179,6 @@ a[x-apple-data-detectors] {
     cursor: pointer;
 }
 
-/* Inputfält */
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 /*-------------------------------------------HEADER & NAVBAR----------------------------------------------*/
 header {
@@ -262,7 +247,6 @@ header {
     padding: 15px;
 }
 
-/* Flexbox för att strukturera headern */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -312,8 +296,8 @@ nav ul li a {
     border: none;
     color: black;
     position: absolute;
-    top: 10px;
-    right: 30px
+    align-content: center;
+    right: 0;
 }
 
 
@@ -499,11 +483,15 @@ nav ul li a {
 
 @media screen and (max-width: 960px) {
     /*-------------Navbar------------*/
+    header {
+        padding: 0;
+    }
+
     nav ul {
-        display: none; /* Dölj menyn från start på mobil */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 2.5rem;
         right: 0;
         background: white;
         width: 100%;
@@ -513,12 +501,10 @@ nav ul li a {
         margin: 20px auto;
     }
 
-    /* När knappen klickas, läggs 'active'-klassen till och menyn visas */
     nav ul.active {
         display: flex;
     }
 
-    /* Visa hamburgermenyn på mobil */
     .menu-toggle {
         display: block;
     }
@@ -573,6 +559,11 @@ nav ul li a {
         font-size: 3vw !important;
         width: 40% !important;
     }
+
+    .page-icon {
+        display: none !important;
+    }
+
 
     /*---------------Homepage-------------------*/
     .hero-text {
