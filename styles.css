@@ -631,8 +631,8 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-top: 5vw;
+    margin: 5vw auto 0;
+    text-align: center;
 }
 
 /*-------------------------------------------MEDLEMSKAP----------------------------------------------*/
