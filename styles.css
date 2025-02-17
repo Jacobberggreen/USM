@@ -49,6 +49,14 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    margin-top: 89px;
+}
+
+body#home main {
+    margin-top: 0;
+}
+
 h1 {
     font-family: Figtree, sans-serif;
     font-size: 3vw;
@@ -147,7 +155,6 @@ a[x-apple-data-detectors] {
     border-bottom: 6px solid var(--primary-color);
     text-align: center;
     padding: 100px 0;
-    margin-top: 89px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
     opacity: 100%;
 }
