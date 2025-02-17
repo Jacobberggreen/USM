@@ -20,152 +20,153 @@
 </head>
 <body>
 
-
 <header>
     <!-- Navigeringsmeny -->
     <div id="navbar-placeholder"></div>
 </header>
-<section id="training">
-    <div class="page-text">
-        <div class="page-text-content">
-            <h1>TRÄNINGSPASS</h1>
-            <p class="page-icon">&nbsp;&nbsp;</p>
-            <span class="material-symbols-outlined page-icon">calendar_month</span>
-        </div>
-    </div>
 
-    <!-- Dropdown-menyer -->
-    <div class="filter-menu">
-        <select class="btn-info selectInfo" id="facility-select">
-            <option value="all">Välj en anläggning</option>
-            <option value="utopia">USM - Utopia</option>
-            <option value="ostra">USM - Östra</option>
-            <option value="mariehem">USM - Mariehem</option>
-            <option value="navet">USM - Navet</option>
-            <option value="all">Alla Anläggningar</option>
-        </select>
-        <select class="btn-info selectInfo" id="pass-select">
-            <option selected value="all">Välj typ av pass</option>
-        </select>
-        <select class="btn-info selectInfo" id="instructor-select">
-            <option disabled selected>Välj instruktör</option>
-            <option value="instruct_1">Instruktör 1</option>
-            <option value="instruct_2">Instruktör 2</option>
-            <option value="instruct_3">Instruktör 3</option>
-            <option value="instruct_4">Instruktör 4</option>
-            <option value="instruct_5">Instruktör 5</option>
-        </select>
-        <input class="btn-info selectInfo" id="date-picker" type="date">
-    </div>
-
-    <!-- Horisontell scroll med datum -->
-    <div class="date-scroll-container">
-        <button class="scroll-btn left" onclick="scrollDates(-1)">&#9664;</button>
-        <div class="date-list" id="date-list"></div>
-        <button class="scroll-btn right" onclick="scrollDates(1)">&#9654;</button>
-    </div>
-
-    <div class="schedule-wrapper">
-        <!-- Träningspass schema -->
-        <div class="schedule">
-            <div class="time-slot">09-10</div>
-            <div class="time-slot">10-11</div>
-            <div class="time-slot">11-12</div>
-            <div class="time-slot">12-13</div>
-            <div class="time-slot">13-14</div>
-            <div class="time-slot">14-15</div>
-            <div class="time-slot">15-16</div>
-        </div>
-
-
-        <!-- Schema för anläggningar -->
-
-        <!-- Schema för Utopia -->
-        <div class="schedule facility-schedule" id="schedule-utopia">
-            <div class="time-slot-item">Yoga</div>
-            <div class="time-slot-item">Spinning</div>
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item">Bodypump</div>
-            <div class="time-slot-item">Spinning</div>
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item">Crossfit</div>
-        </div>
-
-        <!-- Schema för Östra -->
-        <div class="schedule facility-schedule" id="schedule-ostra">
-            <div class="time-slot-item">Pilates</div>
-            <div class="time-slot-item">HIIT</div>
-            <div class="time-slot-item">Zumba</div>
-            <div class="time-slot-item">Boxning</div>
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item">Cirkelträning</div>
-            <div class="time-slot-item"></div>
-        </div>
-
-        <!-- Schema för Mariehem -->
-        <div class="schedule facility-schedule" id="schedule-mariehem">
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item">Yoga</div>
-            <div class="time-slot-item">Pilates</div>
-            <div class="time-slot-item">Crossfit</div>
-            <div class="time-slot-item">HIIT</div>
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item">Bodypump</div>
-        </div>
-
-        <!-- Schema för Navet -->
-        <div class="schedule facility-schedule" id="schedule-navet">
-            <div class="time-slot-item">AquaFit</div>
-            <div class="time-slot-item">Simträning</div>
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item"></div>
-            <div class="time-slot-item">Zumba</div>
-            <div class="time-slot-item">Yoga</div>
-            <div class="time-slot-item">Spinning</div>
-        </div>
-    </div>
-
-    <!-- Program -->
-
-    <div class="page-text">
-        <p>TRÄNINGSPROGRAM</p>
-    </div>
-
-    <div class="info-items">
-        <!-- USM Start -->
-        <div class="gray-box">
-            <img alt="Grupp Träning" src="pictures/group_training.png">
-            <div class="shop-content">
-                <div class="gray-box-text">
-                    <h2>USM START</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                </div>
-                <div class="gray-box-button">
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription?web-category=9"
-                       target="_blank">BOKA</a>
-                </div>
+<main>
+    <section id="training">
+        <div class="page-text">
+            <div class="page-text-content">
+                <h1>TRÄNINGSPASS</h1>
+                <p class="page-icon">&nbsp;&nbsp;</p>
+                <span class="material-symbols-outlined page-icon">calendar_month</span>
             </div>
         </div>
 
-        <!-- PT -->
-        <div class="gray-box">
-            <img alt="PT Träning" src="pictures/pt_training.png">
-            <div class="gray-box-content-content">
-                <div class="gray-box-text">
-                    <h2>BOKA PT</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                </div>
-                <div class="gray-box-button">
-                    <a class="btn-info" href="https://usm.goactivebooking.com/event-categories/8/events"
-                       target="_blank">BOKA</a>
-                </div>
+        <!-- Dropdown-menyer -->
+        <div class="filter-menu">
+            <select class="btn-info selectInfo" id="facility-select">
+                <option value="all">Välj en anläggning</option>
+                <option value="utopia">USM - Utopia</option>
+                <option value="ostra">USM - Östra</option>
+                <option value="mariehem">USM - Mariehem</option>
+                <option value="navet">USM - Navet</option>
+                <option value="all">Alla Anläggningar</option>
+            </select>
+            <select class="btn-info selectInfo" id="pass-select">
+                <option selected value="all">Välj typ av pass</option>
+            </select>
+            <select class="btn-info selectInfo" id="instructor-select">
+                <option disabled selected>Välj instruktör</option>
+                <option value="instruct_1">Instruktör 1</option>
+                <option value="instruct_2">Instruktör 2</option>
+                <option value="instruct_3">Instruktör 3</option>
+                <option value="instruct_4">Instruktör 4</option>
+                <option value="instruct_5">Instruktör 5</option>
+            </select>
+            <input class="btn-info selectInfo" id="date-picker" type="date">
+        </div>
+
+        <!-- Horisontell scroll med datum -->
+        <div class="date-scroll-container">
+            <button class="scroll-btn left" onclick="scrollDates(-1)">&#9664;</button>
+            <div class="date-list" id="date-list"></div>
+            <button class="scroll-btn right" onclick="scrollDates(1)">&#9654;</button>
+        </div>
+
+        <div class="schedule-wrapper">
+            <!-- Träningspass schema -->
+            <div class="schedule">
+                <div class="time-slot">09-10</div>
+                <div class="time-slot">10-11</div>
+                <div class="time-slot">11-12</div>
+                <div class="time-slot">12-13</div>
+                <div class="time-slot">13-14</div>
+                <div class="time-slot">14-15</div>
+                <div class="time-slot">15-16</div>
+            </div>
+
+
+            <!-- Schema för anläggningar -->
+
+            <!-- Schema för Utopia -->
+            <div class="schedule facility-schedule" id="schedule-utopia">
+                <div class="time-slot-item">Yoga</div>
+                <div class="time-slot-item">Spinning</div>
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item">Bodypump</div>
+                <div class="time-slot-item">Spinning</div>
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item">Crossfit</div>
+            </div>
+
+            <!-- Schema för Östra -->
+            <div class="schedule facility-schedule" id="schedule-ostra">
+                <div class="time-slot-item">Pilates</div>
+                <div class="time-slot-item">HIIT</div>
+                <div class="time-slot-item">Zumba</div>
+                <div class="time-slot-item">Boxning</div>
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item">Cirkelträning</div>
+                <div class="time-slot-item"></div>
+            </div>
+
+            <!-- Schema för Mariehem -->
+            <div class="schedule facility-schedule" id="schedule-mariehem">
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item">Yoga</div>
+                <div class="time-slot-item">Pilates</div>
+                <div class="time-slot-item">Crossfit</div>
+                <div class="time-slot-item">HIIT</div>
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item">Bodypump</div>
+            </div>
+
+            <!-- Schema för Navet -->
+            <div class="schedule facility-schedule" id="schedule-navet">
+                <div class="time-slot-item">AquaFit</div>
+                <div class="time-slot-item">Simträning</div>
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item"></div>
+                <div class="time-slot-item">Zumba</div>
+                <div class="time-slot-item">Yoga</div>
+                <div class="time-slot-item">Spinning</div>
             </div>
         </div>
 
-    </div>
+        <!-- Program -->
 
-</section>
+        <div class="page-text">
+            <p>TRÄNINGSPROGRAM</p>
+        </div>
 
+        <div class="info-items">
+            <!-- USM Start -->
+            <div class="gray-box">
+                <img alt="Grupp Träning" src="pictures/group_training.png">
+                <div class="shop-content">
+                    <div class="gray-box-text">
+                        <h2>USM START</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="gray-box-button">
+                        <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription?web-category=9"
+                           target="_blank">BOKA</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PT -->
+            <div class="gray-box">
+                <img alt="PT Träning" src="pictures/pt_training.png">
+                <div class="gray-box-content-content">
+                    <div class="gray-box-text">
+                        <h2>BOKA PT</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                    <div class="gray-box-button">
+                        <a class="btn-info" href="https://usm.goactivebooking.com/event-categories/8/events"
+                           target="_blank">BOKA</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</main>
 
 <!-- FOOTER -->
 <div id="footer-placeholder"></div>
