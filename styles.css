@@ -1141,7 +1141,7 @@ nav ul li a {
     justify-content: space-between;
     flex-grow: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('pictures/dumbells.png') center/cover no-repeat;
+    url('pictures/dumbbells.png') center/cover no-repeat;
     border-radius: 5px;
 }
 
@@ -1188,7 +1188,7 @@ nav ul li a {
 }
 
 #about-banner {
-    background: url('pictures/dumbells.png') center/cover no-repeat;
+    background: url('pictures/dumbbells.png') center/cover no-repeat;
     border-radius: 20px;
 }
 
