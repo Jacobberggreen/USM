@@ -1459,6 +1459,10 @@ iframe {
         display: none !important;
     }
 
+    .btn-large {
+        width: auto;
+    }
+
 
     /*---------------Homepage-------------------*/
     .hero-text {
