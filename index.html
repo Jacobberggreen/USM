@@ -20,6 +20,11 @@
 </head>
 <body id=home>
 
+<!-- Loading screen -->
+<div class="fade-out" id="preloader">
+    <img alt="Ditt gym i Umeå - USM" id="preloader-logo" src="pictures/logo.png">
+</div>
+
 <header>
     <!-- Navigeringsmeny -->
     <div id="navbar-placeholder"></div>
@@ -28,7 +33,7 @@
 <main>
     <section class="hero">
         <video autoplay id="background-video" loop muted playsinline>
-            <source src="media/gym_video.mp4" type="video/mp4">
+            <source id="hero-video" src="media/gym_video.mp4" type="video/mp4">
         </video>
 
         <div id="audio-controls">

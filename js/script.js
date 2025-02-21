@@ -1,4 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // -------------- Loading screen----------------
+    let video = document.getElementById("background-video");
+    let preloader = document.getElementById("preloader");
+    let content = document.getElementById("content");
+
+    if (!video) {
+        console.error("Videon kunde inte hittas!");
+        removePreloader();
+        return;
+    }
+
+    // Lyssna på om videon är redo att spela
+    video.addEventListener("canplaythrough", function () {
+        setTimeout(removePreloader, 200);
+    });
+
+    // Om videon inte laddas efter 5 sekunder, ta bort preloader ändå
+    setTimeout(() => {
+        if (preloader.style.display !== "none") {
+            console.warn("Videon laddade inte snabbt nog, tar bort preloadern ändå.");
+            removePreloader();
+        }
+    }, 5000);
+
+    function removePreloader() {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 500); // Väntar på fade-out-animationen innan den försvinner helt
+        content.classList.remove("hidden");
+    }
+
 
     // -------------- Load navbar and initialize event-listeners----------------
     fetch("navbar.html")
