@@ -259,11 +259,12 @@ a[x-apple-data-detectors] {
 #scroll-to-top {
     position: fixed;
     width: auto !important;
-    bottom: 10px;
-    right: 15px;
+    bottom: 1rem;
+    right: 1.5rem;
     z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.2) -2px 4px 5px;
     transition: opacity 0.5s;
+    border-radius: 1rem;
 }
 
 .btn-large {
