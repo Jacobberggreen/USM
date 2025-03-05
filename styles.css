@@ -120,13 +120,40 @@ a[x-apple-data-detectors] {
 }
 
 .login-box input {
+    font-size: 1rem;
     width: 100%;
     max-width: 280px;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    margin: 0.5rem 0 2rem;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
     border-radius: 5px;
     text-align: center;
+    transition: all 0.2s;
+}
+
+.login-box input:focus {
+    outline: none;
+    background-color: rgb(104, 104, 104, 0.7);
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.8) 0 0 5px;
+    letter-spacing: 1px;
+}
+
+.login-box input::placeholder {
+    transition: all 0.2s;
+}
+
+.login-box input:focus::placeholder {
+    color: white;
+}
+
+.login-box input:focus:hover::placeholder {
+    color: white;
+}
+
+.login-box input:hover::placeholder {
+    color: black;
 }
 
 @keyframes fadeIn {
@@ -485,7 +512,7 @@ nav ul li a .active {
     max-height: 30vh; /* Lägger till höjdbegränsning för resultaten */
     background: rgba(255, 255, 255, 0.8); /* Samma bakgrund som sökrutan */
     text-align: left; /* Texten ska vara vänsterjusterad */
-    font-size: 0.8rem; /* Lättare textstorlek */
+    font-size: 1.1rem; /* Lättare textstorlek */
     box-shadow: rgba(0, 0, 0, 0.5) 0 4px 15px;
     transition: none;
     justify-items: center;

@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-// Funktion för att visa resultaten i en grid
+        // Funktion för att visa resultaten i en grid
         function displayResults(results, pages) {
             const $resultsContainer = $("#search-results");
             $resultsContainer.empty(); // Rensa tidigare resultat
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Fel vid laddning av footer:", error));
 
-    // Funktion som sätter upp login-menyn
+    // ---------------- Login menu ----------------
     function setupLoginMenu() {
         const loginLink = document.querySelector(".login-link");
         const loginDropdown = document.getElementById("login-dropdown");
