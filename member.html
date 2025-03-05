@@ -17,6 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=badge"
           rel="stylesheet"/>
 
+    <!-- Ladda jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ladda jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/member.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -39,7 +49,7 @@
             <img alt="Medlemskapskort" src="pictures/medlemskort.png">
         </div>
 
-        <div class="membership-filter">
+        <div class="membership-filter animate">
             <select class="btn-info selectInfo selectLarge" id="facility-select">
                 <option disabled selected value="">Välj en anläggning</option>
                 <option value="utopia">USM - Utopia</option>
@@ -51,7 +61,7 @@
         </div>
 
         <!-- Medlemskapskort -->
-        <div class="membership-cards">
+        <div class="membership-cards animate">
 
             <!-- Utopia -->
             <div class="membership-card" data-facility="utopia">
@@ -171,7 +181,8 @@
                     <h2>USM i Navet förskott</h2>
                     <p>Full tillgång till gym och pass.</p>
                     <p class="price">6588 SEK</p>
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription" rel="noopener noreferrer"
+                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription"
+                       rel="noopener noreferrer"
                        target="_blank">Välj</a>
                 </div>
             </div>
@@ -182,7 +193,8 @@
                     <h2>USM i Navet autogiro</h2>
                     <p>12 månaders löpande medlemskap.</p>
                     <p class="price">459 SEK per månad</p>
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription" rel="noopener noreferrer"
+                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription"
+                       rel="noopener noreferrer"
                        target="_blank">Välj</a>
                 </div>
             </div>
@@ -193,7 +205,8 @@
                     <h2>USM i Navet månadskort</h2>
                     <p>Full tillgång till gym och pass.</p>
                     <p class="price">899 SEK</p>
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription" rel="noopener noreferrer"
+                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription"
+                       rel="noopener noreferrer"
                        target="_blank">Välj</a>
                 </div>
             </div>
@@ -205,7 +218,8 @@
                     <h2>Alla USM förskott</h2>
                     <p>Full tillgång till gym och pass.</p>
                     <p class="price">14 999 SEK</p>
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription" rel="noopener noreferrer"
+                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription"
+                       rel="noopener noreferrer"
                        target="_blank">Välj</a>
                 </div>
             </div>
@@ -216,7 +230,8 @@
                     <h2>Alla USM autogiro</h2>
                     <p>12 månaders löpande medlemskap.</p>
                     <p class="price">999 SEK per månad</p>
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription" rel="noopener noreferrer"
+                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription"
+                       rel="noopener noreferrer"
                        target="_blank">Välj</a>
                 </div>
             </div>
@@ -227,7 +242,8 @@
                     <h2>Alla USM månadskort</h2>
                     <p>Full tillgång till gym och pass.</p>
                     <p class="price">1999 SEK</p>
-                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription" rel="noopener noreferrer"
+                    <a class="btn-info" href="https://usm.goactivebooking.com/buy-subscription"
+                       rel="noopener noreferrer"
                        target="_blank">Välj</a>
                 </div>
             </div>
@@ -235,14 +251,13 @@
         </div>
 
     </section>
+
+    <div class="btn-info" id="scroll-to-top">TOP</div>
+
 </main>
 
 <!-- FOOTER -->
 <div id="footer-placeholder"></div>
-
-<script src="js/script.js"></script>
-<script src="js/member.js"></script>
-<script src="js/app.js"></script>
 
 </body>
 </html>

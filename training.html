@@ -17,6 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_month"
           rel="stylesheet"/>
 
+    <!-- Ladda jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ladda jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/training.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -36,7 +46,7 @@
         </div>
 
         <!-- Dropdown-menyer -->
-        <div class="filter-menu">
+        <div class="filter-menu animate">
             <select class="btn-info selectInfo" id="facility-select">
                 <option value="all">Välj en anläggning</option>
                 <option value="utopia">USM - Utopia</option>
@@ -60,13 +70,13 @@
         </div>
 
         <!-- Horisontell scroll med datum -->
-        <div class="date-scroll-container">
+        <div class="date-scroll-container animate">
             <button class="scroll-btn left" onclick="scrollDates(-1)">&#9664;</button>
             <div class="date-list" id="date-list"></div>
             <button class="scroll-btn right" onclick="scrollDates(1)">&#9654;</button>
         </div>
 
-        <div class="schedule-wrapper">
+        <div class="schedule-wrapper animate">
             <!-- Träningspass schema -->
             <div class="schedule">
                 <div class="time-slot">09-10</div>
@@ -128,15 +138,15 @@
 
         <!-- Program -->
 
-        <div class="page-text">
+        <div class="page-text animate">
             <p>TRÄNINGSPROGRAM</p>
         </div>
 
-        <div class="info-items">
+        <div class="info-items animate" id="PT">
             <!-- USM Start -->
             <div class="gray-box">
                 <img alt="Grupp Träning" src="pictures/group_training.png">
-                <div class="shop-content">
+                <div class="gray-box-content">
                     <div class="gray-box-text">
                         <h2>USM START</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -151,7 +161,7 @@
             <!-- PT -->
             <div class="gray-box">
                 <img alt="PT Träning" src="pictures/pt_training.png">
-                <div class="gray-box-content-content">
+                <div class="gray-box-content">
                     <div class="gray-box-text">
                         <h2>BOKA PT</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -166,14 +176,13 @@
         </div>
 
     </section>
+
+    <div class="btn-info" id="scroll-to-top">TOP</div>
+
 </main>
 
 <!-- FOOTER -->
 <div id="footer-placeholder"></div>
-
-<script src="js/script.js"></script>
-<script src="js/training.js"></script>
-<script src="js/app.js"></script>
 
 </body>
 </html>

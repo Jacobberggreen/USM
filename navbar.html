@@ -16,9 +16,8 @@
 </div>
 
 <!-- Navbar -->
-
-
 <nav class="nav-container">
+
     <div class="logo">
         <a href="index.html">
             <img alt="Logo" id="logo-img" src="pictures/logo.png">
@@ -26,16 +25,24 @@
     </div>
 
     <ul id="nav-menu">
-        <li class="list-space yes"><a href="shop.html">Shop</a></li>
+        <li class="list-space yes"><a href="#" id="search-icon">Sök</a></li>
+        <li class="list-space yes search-padding"><a href="shop.html">Shop</a></li>
         <li class="list-space yes"><a href="training.html">Boka Träning</a></li>
         <li class="list-space yes"><a href="facilities.html">Öppettider</a></li>
-        <li class="list-space no"><a class="btn-info btn-nav btn-resp" href="member.html">BLI MEDLEM</a>
+        <li class="list-space no"><a class="btn-info btn-nav" href="member.html">BLI MEDLEM</a>
         </li>
         <li class="list-space yes"><a class="login-link" href="#">Logga In</a></li>
     </ul>
 
+    <input autofocus id="search-box" placeholder="Sök här..." type="text">
+    <div id="search-results"></div>
+
     <!-- Hamburger meny -->
-    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <button class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </button>
 </nav>
 
 

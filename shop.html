@@ -17,6 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart"
           rel="stylesheet"/>
 
+    <!-- Ladda jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ladda jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -38,7 +47,7 @@
 
         <div class="shop-items">
             <!-- Presentkort -->
-            <div class="gray-box">
+            <div class="gray-box animate">
                 <img alt="Presentkort" src="pictures/giftcard.png">
                 <div class="gray-box-content">
                     <div class="gray-box-text">
@@ -53,7 +62,7 @@
             </div>
 
             <!-- Matkort -->
-            <div class="gray-box">
+            <div class="gray-box animate searchable">
                 <img alt="Foodbox" src="pictures/foodbox.jpg">
                 <div class="gray-box-content">
                     <div class="gray-box-text">
@@ -68,7 +77,7 @@
             </div>
 
             <!-- Shop -->
-            <div class="shop-link-box">
+            <div class="shop-link-box animate">
                 <div class="shop-link-content">
                     <div class="shop-link-text">
                         <h2>BUTIK</h2>
@@ -85,12 +94,13 @@
         </div>
 
     </section>
+
+    <div class="btn-info" id="scroll-to-top">TOP</div>
+
 </main>
 
 <!-- FOOTER -->
 <div id="footer-placeholder"></div>
-<script src="js/script.js"></script>
-<script src="js/app.js"></script>
 
 </body>
 </html>

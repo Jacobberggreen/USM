@@ -17,6 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on"
           rel="stylesheet">
 
+    <!-- Ladda jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Ladda jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/homePage.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body id=home>
 
@@ -43,15 +53,89 @@
 
 
         <div class="hero-text">
-            <h1>Träningsanläggningen <br> med DIG i centrum</h1>
+            <h1 id="changing-text"></h1>
+            <h1 class="mobile-hero-text">Träningsanläggningen<br>med DIG i centrum</h1>
             <div class="hero-buttons">
                 <a class="btn-large" href="member.html">MEDLEMSKAP</a>
                 <a class="btn-large" href="facilities.html">ANLÄGGNINGAR</a>
             </div>
         </div>
+
     </section>
 
-    <section id="info">
+    <div class="marquee">
+        <div class="marquee-inner">
+            <div class="marquee-content"><span>USM</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>DITT GYM I UMEÅ</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>UTOPIA</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>NAVET</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>ÖSTRA</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>MARIEHEM</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+
+            <div class="marquee-content"><span>USM</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>UTOPIA</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>NAVET</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>MARIEHEM</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+
+            <div class="marquee-content"><span>USM</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>DITT GYM I UMEÅ</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>UTOPIA</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>NAVET</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>ÖSTRA</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+            <div class="marquee-content"><span>MARIEHEM</span></div>
+            <div class="marquee-content"><span>
+                <img alt=" - USM - " class="rolling-banner-img" src="pictures/fav.png">
+                </span></div>
+        </div>
+    </div>
+
+
+    <section class="animate">
         <!-- Pass & Program -->
         <div class="info-grid">
             <div class="info-box full-box">
@@ -88,7 +172,7 @@
     </section>
 
     <!-- Anläggningar -->
-    <section id="facilities">
+    <section class="animate" id="facilities">
         <div class="center-div facility-box">
             <a class="facility-link" href="facilities.html">
                 VÅRA ANLÄGGNINGAR <span class="arrow">➤</span>
@@ -135,18 +219,16 @@
         </div>
     </section>
 
-    <div class="about-us">
+    <div class="about-us animate">
         <a class="btn-large" href="about.html">LÄS MER OM OSS</a>
     </div>
+
+    <div class="btn-info" id="scroll-to-top">TOP</div>
 
 </main>
 
 <!-- FOOTER -->
 <div id="footer-placeholder"></div>
-
-<script src="js/script.js"></script>
-<script src="js/homePage.js"></script>
-<script src="js/app.js"></script>
 
 </body>
 </html>
