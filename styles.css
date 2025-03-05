@@ -267,6 +267,11 @@ a[x-apple-data-detectors] {
     border-radius: 1rem;
 }
 
+#scroll-to-top:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .btn-large {
     background: rgba(138, 138, 138, 0.7);
     padding: 1.4vw 3vw;
