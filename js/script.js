@@ -389,7 +389,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const weightBottom = weight.offset().top + weight.outerHeight();
 
                     // Om objektet är nära botten, låt det "ramla" till botten och ge den studseffekten
-                    if (weightBottom >= dropAreaHeight - 50) {
+                    if (weightBottom >= dropAreaHeight) {
                         // Först gör vikten en snabb rörelse till botten
                         weight.animate({top: dropAreaHeight - weight.outerHeight()}, 200, "easeInQuad", function () {
                             // Sedan lägg till studseffekten med hjälp av animationer
