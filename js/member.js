@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // --------------Hängande medlemskort----------------
-
+    // --------------Medlemskort----------------
     let facilitySelect = document.getElementById("facility-select"); // Hämta dropdown-menyn
     let cards = document.querySelectorAll(".membership-card"); // Hämta alla kort
 
